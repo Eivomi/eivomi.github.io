@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книгарня</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="top-nav">
+    <div class="time-container">
+      <div class="time-item">
+        <span class="time-letter">Ч</span>
+        <span class="time-description">читай</span>
+      </div>
+      <div class="time-item">
+        <span class="time-letter">А</span>
+        <span class="time-description">аналізуй</span>
+      </div>
+      <div class="time-item">
+        <span class="time-letter">С</span>
+        <span class="time-description">спілкуйся</span>
+      </div>
+    </div>
+    <div class="nav-buttons">
+      <button class="nav-button" onclick="window.location.href='catalog.html'">
+        Каталог
+      </button>
+      <button class="upper-button"><img src="search.svg" alt="Пошук"></button>
+      <button class="upper-button" onclick="window.location.href='account.html'">
+        <img src="avatar.svg" alt="Мій акаунт">
+      </button>
+      <button class="upper-button" onclick="goToCart()">
+        <img src="basket.svg" alt="Кошик">
+      </button>
+
+      <script>
+        // Функція для переходу на сторінку кошика
+        function goToCart() {
+          window.location.href = "cart.html"; // Перехід на сторінку кошика
+        }
+      </script>
+
+
+      <button class="upper-button"><img src="heart.svg" alt="Вподобане"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="image-container">
+    <img src="banner1.png" alt="Фото книгарні" class="promo-image">
+  </div>
+</main>
+
+<div class="section-title">
+  <h2>Найпопулярніші книги</h2>
+</div>
+
+<div class="books-container" id="books-container">
+  <!-- Картки книг будуть додаватися тут за допомогою JavaScript -->
+</div>
+<main>
+  <div class="image-container">
+    <img src="banner2.png" alt="Фото книгарні" class="promo-image">
+  </div>
+</main>
+<!-- Часті питання -->
+<div class="faq">
+  <h2>Часті питання</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">Як авторизуватись?</button>
+    <p class="faq-answer">Щоб увійти до особистого кабінету, натисніть на іконку "Мій акаунт" у верхньому меню та введіть ваші дані.</p>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Як замовити на сайті?</button>
+    <p class="faq-answer">Щоб оформити замовлення, додайте книги у кошик, перейдіть до кошика та заповніть необхідні дані.</p>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Як відбувається доставка?</button>
+    <p class="faq-answer">Доставка здійснюється Новою Поштою, Укрпоштою або кур'єром. Після оформлення замовлення ви отримаєте номер для відстеження.</p>
+  </div>
+</div>
+
+<footer>
+  <p>Контакти: +38 (063) 456 7890</p>
+  <p>Email: CHAS.bookclub@gmail.com</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
